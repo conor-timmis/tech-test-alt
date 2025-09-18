@@ -23,8 +23,8 @@ I am also aware that I have taken the foundation of the site and made some perso
 
 | Section           | Time Spent |
 | ----------------- | ---------- |
-| Navigation / Hero | 4h 30m     |
+| Navigation / Hero | 4h 40m     |
 | Case Studies      | 2h         |
-| Team Section      |            |
+| Team Section      | 45m        |
 | Contact / Footer  |            |
 | **Total**         |            |
