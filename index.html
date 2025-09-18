@@ -19,13 +19,12 @@
             <div class="max-w-7xl mx-auto">
                 <div class="header-top-row">
                     <div class="header-left-section">
-
                         <div class="logo-container">
                             <img src="assets/images/dnswhite.png" alt="DNS Document Network Services" class="header-logo">
                         </div>
 
-                        <!-- Navigation -->
-                        <div class="header-nav-container">
+                        <!-- Desktop Navigation -->
+                        <div class="header-nav-container desktop-nav">
                             <div class="header-nav-links">
                                 <div class="header-phone">0845 634 6895</div>
                                 <a href="#" class="header-link">About us</a>
@@ -41,13 +40,46 @@
                             </nav>
                         </div>
                     </div>
+                    
                     <div class="header-right-section">
-                        <a href="#" class="header-support-link">Request support</a>
-                        <button class="call-back-btn">
-                            Call Me Back
+                        <a href="#" class="header-support-link desktop-only">Request support</a>
+                        <button class="call-back-btn desktop-only">
+                            <span class="phone-emoji">📞</span> Call Me Back
+                        </button>
+                        
+                        <!-- Mobile Burger Menu Button -->
+                        <button class="burger-menu-btn mobile-only" aria-label="Toggle navigation menu">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
                         </button>
                     </div>
                 </div>
+
+                <!-- Mobile Navigation Menu -->
+                <nav class="mobile-nav" id="mobile-nav">
+                    <div class="mobile-nav-content">
+                        <div class="mobile-nav-section">
+                            <div class="mobile-phone">0845 634 6895</div>
+                            <a href="#" class="mobile-nav-link">About us</a>
+                            <a href="#" class="mobile-nav-link">Careers</a>
+                        </div>
+                        
+                        <div class="mobile-nav-section main-nav-section">
+                            <a href="#" class="mobile-nav-link primary">Services</a>
+                            <a href="#" class="mobile-nav-link primary">Case Studies</a>
+                            <a href="#" class="mobile-nav-link primary">Insights</a>
+                            <a href="#" class="mobile-nav-link primary">Contact</a>
+                        </div>
+                        
+                        <div class="mobile-nav-section action-section">
+                            <a href="#" class="mobile-nav-link support">Request support</a>
+                            <button class="mobile-call-back-btn">
+                                <span class="phone-emoji">📞</span> Call Me Back
+                            </button>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
 
@@ -134,6 +166,149 @@
             <h2 class="clients-title">Our Clients Include</h2>
             <div class="clients-logo-container">
                 <img src="assets/images/partners.png" alt="Our Partners" class="clients-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study-section">
+        <div class="case-study-container">
+            <div class="case-study-grid">
+                <div class="case-study-image-container">
+                    <img src="assets/images/server.png" alt="Server Infrastructure" class="case-study-image">
+                </div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Turning process frustration into progress since 1996</h2>
+                    <p class="case-study-description">
+                        Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.
+                    </p>
+                    <p class="case-study-description">
+                        Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+            <div class="testimonial-content">
+                <h3 class="testimonial-subtitle">Don't just take our word for it...</h3>
+                <div class="testimonial-card">
+                    <blockquote class="testimonial-quote">
+                        "We have been delighted with our DNS partnership. The club now has direction & delivery on all document processes with a clear road map for the foreseeable future."
+                    </blockquote>
+                    <div class="testimonial-attribution">
+                        <p class="attribution-text">Paul Johnson, Director</p>
+                        <p class="attribution-text">Nottingham Forest Football Club</p>
+                    </div>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <a href="#" class="view-case-studies-link">View all Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Process Section -->
+    <section class="business-process-section">
+        <div class="business-process-container">
+            <h2 class="business-process-title">The business process problem solvers.</h2>
+            <div class="business-process-grid">
+                <div class="business-process-text">
+                    <p class="business-process-description">
+                        Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them. Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.
+                    </p>
+                </div>
+                <div class="business-process-text">
+                    <p class="business-process-description">
+                        Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them. Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Grid Section -->
+    <section class="bottom-grid-section">
+        <div class="geometric-overlay-cs"></div>
+        <div class="bottom-grid-container">
+            <div class="bottom-grid">
+                <div class="insights-section">
+                    <h3 class="insights-title">Insights & News</h3>
+                    <div class="insights-grid">
+                        <article class="insight-card large">
+                            <div class="insight-image-large">
+                                <img src="assets/images/msloop.png" alt="Microsoft Loop" class="insight-img">
+                            </div>
+                            <div class="insight-content">
+                                <time class="insight-date">15/06/2024</time>
+                                <h4 class="insight-title-text">What is Microsoft Loop and how does it work</h4>
+                            </div>
+                        </article>
+                        <div class="insight-small-grid">
+                            <article class="insight-card small">
+                                <div class="insight-image-small">
+                                    <img src="assets/images/xerox.png" alt="Xerox Technology" class="insight-img">
+                                </div>
+                                <div class="insight-content">
+                                    <time class="insight-date">15/06/2024</time>
+                                    <h4 class="insight-title-text">Boost productivity within your law firm with xerox technology</h4>
+                                </div>
+                            </article>
+                            <article class="insight-card small">
+                                <div class="insight-image-small">
+                                    <img src="assets/images/msloop.png" alt="Microsoft Loop" class="insight-img">
+                                </div>
+                                <div class="insight-content">
+                                    <time class="insight-date">15/06/2024</time>
+                                    <h4 class="insight-title-text">What is Microsoft Loop and how does it work</h4>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3 class="faq-title">FAQ's</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">Do you offer 24hr support?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you sell Xerox printers?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Can I upgrade my support package?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you offer 24hr support?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you sell Xerox printers?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you sell Xerox printers?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you sell Xerox printers?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you sell Xerox printers?</button>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Do you sell Xerox printers?</button>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all-faqs">View all FAQ's</a>
+                </div>
             </div>
         </div>
     </section>
