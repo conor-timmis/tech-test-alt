@@ -57,6 +57,75 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Contact form submission
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Check if all required fields are filled
+            const inputs = contactForm.querySelectorAll('input[required], textarea[required]');
+            let allFilled = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    allFilled = false;
+                }
+            });
+            
+            if (allFilled) {
+                contactForm.classList.add('celebrating');
+                
+                // Show success message
+                showSuccessMessage();
+                
+                // Reset form after animation
+                setTimeout(() => {
+                    contactForm.reset();
+                    contactForm.classList.remove('celebrating');
+                }, 2000);
+            } else {
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        input.style.borderColor = '#ff6b6b';
+                        setTimeout(() => {
+                            input.style.borderColor = '';
+                        }, 2000);
+                    }
+                });
+            }
+        });
+    }
+    
+    // Create success message element
+    function showSuccessMessage() {
+        const successMessage = document.createElement('div');
+        successMessage.className = 'success-message';
+        successMessage.innerHTML = `
+            <h3>🎉 Message Sent!</h3>
+            <p>Thank you for getting in touch. We'll get back to you soon!</p>
+        `;
+        
+        document.body.appendChild(successMessage);
+        
+        // Show message timers
+        setTimeout(() => {
+            successMessage.classList.add('show');
+        }, 500);
+        
+        setTimeout(() => {
+            successMessage.classList.remove('show');
+            setTimeout(() => {
+                if (successMessage.parentNode) {
+                    successMessage.parentNode.removeChild(successMessage);
+                }
+            }, 300);
+        }, 3000);
+    }
+});
+
 // Prevent scroll when nav open
 document.addEventListener('DOMContentLoaded', function() {
     const style = document.createElement('style');
