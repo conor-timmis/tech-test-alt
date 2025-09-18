@@ -26,5 +26,5 @@ I am also aware that I have taken the foundation of the site and made some perso
 | Navigation / Hero | 4h 40m     |
 | Case Studies      | 2h         |
 | Team Section      | 45m        |
-| Contact / Footer  |            |
-| **Total**         |            |
+| Contact / Footer  | 3h 30m     |
+| **Total**         | 10h 55m    |
