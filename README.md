@@ -13,7 +13,7 @@ This repository contains a web project for Alt Design. It uses HTML, CSS, and Ja
 
 I've opted for a simple HTML, CSS, and JavaScript setup for this project, as I felt that using a full web application framework like React would be excessive for display purposes.
 
-### Pre-Warning
+## Pre-Warning
 
 For this test, Tailwind CSS was intentionally chosen despite the warning for the CDN link in the console. This decision was made because the project did not need to be a full-fledged application, and is sufficient for what I am putting together. I understand that this choice may not seem ideal, but I am fully aware of the implications and would not use this approach in a full production setting.
 
@@ -28,3 +28,11 @@ I am also aware that I have taken the foundation of the site and made some perso
 | Team Section      | 45m        |
 | Contact / Footer  | 3h 30m     |
 | **Total**         | 10h 55m    |
+
+## Lighthouse Test
+
+To ensure the site meets modern web standards, I conducted a comprehensive Lighthouse audit focusing on performance, accessibility, and best practices. The SEO metric is excluded it's not required for this demonstration project.
+
+The audit was performed after the final optimisations and would represent the "production-ready" state of the page.
+
+![lighthouse](documentation/lighthouse.png)
