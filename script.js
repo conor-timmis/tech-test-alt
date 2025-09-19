@@ -138,3 +138,45 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
+
+// Fix page refresh scrolling to sections
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if page was loaded with a hash fragment
+    if (window.location.hash) {
+
+        const html = document.documentElement;
+        const originalScrollBehavior = html.style.scrollBehavior;
+        html.style.scrollBehavior = 'auto';
+        
+        // Scroll to top immediately
+        window.scrollTo(0, 0);
+        
+        setTimeout(() => {
+            html.style.scrollBehavior = originalScrollBehavior || 'smooth';
+        }, 1);
+    }
+    
+    // Ensure smooth scrolling works for navigation clicks
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#') {
+                e.preventDefault();
+                return;
+            }
+            
+            const targetElement = document.querySelector(href);
+            if (targetElement) {
+                document.documentElement.style.scrollBehavior = 'smooth';
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                
+                setTimeout(() => {
+                    window.history.replaceState(null, null, href);
+                }, 10);
+                
+                e.preventDefault();
+            }
+        });
+    });
+});
