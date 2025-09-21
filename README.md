@@ -21,13 +21,16 @@ I am also aware that I have taken the foundation of the site and made some perso
 
 ## Time Tracking
 
+I was asked, as part of the test, to keep track of the time taken throughout development. Though this was supposed to be a rough 'guesstimate' I took it upon myself to create a table that separates the sections, along with an additional section to represent my own finishing touches. Please bear in mind that I am counting each stage of development to include not only the desktop view but also responsiveness, functionality, and mobile versions, as well as the time taken for testing.
+
 | Section           | Time Spent |
 | ----------------- | ---------- |
 | Navigation / Hero | 4h 40m     |
 | Case Studies      | 2h         |
 | Team Section      | 45m        |
 | Contact / Footer  | 3h 30m     |
-| **Total**         | 10h 55m    |
+| Finishing touches | 1h         |
+| **Total**         | 11h 55m    |
 
 ## Lighthouse Test
 
